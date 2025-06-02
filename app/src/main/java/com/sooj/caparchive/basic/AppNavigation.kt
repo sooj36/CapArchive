@@ -1,4 +1,4 @@
-package com.sooj.caparchive
+package com.sooj.caparchive.basic
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
@@ -9,6 +9,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.caparchive.app.presentation.ui.image.ImageDetailScreen
 import com.caparchive.app.presentation.ui.image.ImageListScreen
+import com.sooj.caparchive.presentation.folder.FolderListScreen
 
 @Composable
 fun AppNavigation(

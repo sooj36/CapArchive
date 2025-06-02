@@ -1,4 +1,4 @@
-package com.sooj.caparchive
+package com.sooj.caparchive.presentation.folder
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -36,6 +36,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.sooj.caparchive.basic.Routes
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -46,7 +47,7 @@ fun FolderListScreen(
     // 임시 더미 데이터 (후에 vm 로 교체
     val dummyFolders = remember {
         listOf(
-            "회사업무", "개인일정", "학습자료", "쇼핑", "여행"
+            "회사업무",
         )
     }
 
