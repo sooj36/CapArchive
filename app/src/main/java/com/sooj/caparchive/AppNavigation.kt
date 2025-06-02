@@ -7,6 +7,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.caparchive.app.presentation.ui.image.ImageDetailScreen
+import com.caparchive.app.presentation.ui.image.ImageListScreen
 
 @Composable
 fun AppNavigation(

@@ -24,7 +24,7 @@ import com.sooj.caparchive.Routes
 @Composable
 fun ImageListScreen(
     navController: NavController,
-    folderId: String
+    folderName: String
 ) {
     // 임시 더미 이미지 데이터 (나중에 ViewModel로 교체)
     val dummyImages = remember {
@@ -43,7 +43,7 @@ fun ImageListScreen(
             TopAppBar(
                 title = {
                     Text(
-                        text = folderId,
+                        text = folderName,
                         style = MaterialTheme.typography.headlineSmall
                     )
                 },
