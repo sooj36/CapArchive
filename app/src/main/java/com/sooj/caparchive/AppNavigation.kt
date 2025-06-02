@@ -72,7 +72,6 @@ fun AppNavigation(
                 imageId = imageId
             )
         }
-
     }
 }
 

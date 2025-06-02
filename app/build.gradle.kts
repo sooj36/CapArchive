@@ -113,6 +113,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.foundation.layout.android)
     implementation(libs.androidx.navigation.runtime.android)
     implementation(libs.androidx.navigation.compose.jvmstubs)
 
