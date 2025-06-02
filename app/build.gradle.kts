@@ -1,8 +1,9 @@
-import org.jetbrains.kotlin.commonizer.OptimisticNumberCommonizationEnabledKey.alias
-
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+//    id("com.android.application")
+//    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
@@ -46,11 +47,11 @@ android {
             "1.5.10" // 사용 중인 Kotlin 버전에 맞는 Compose 컴파일러 확장 버전을 명시적으로 지정할 수 있습니다. [1]
         // 일반적으로는 자동으로 선택되므로 생략해도 됩니다.
     }
-    packagingOptions {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
-        }
-    }
+//    packagingOptions {
+//        resources {
+//            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+//        }
+//    }
 }
 
 dependencies {
@@ -73,9 +74,7 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation(platform("androidx.compose:compose-bom:2024.02.01"))
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
+
 }
 
 android {
@@ -114,6 +113,11 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.navigation.runtime.android)
+    implementation(libs.androidx.navigation.compose.jvmstubs)
+
+//    implementation(libs.androidx.navigation.compose)
+    implementation("androidx.navigation:navigation-compose:2.7.6")
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
