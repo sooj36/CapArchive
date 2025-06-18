@@ -113,8 +113,8 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.navigation.runtime.android)
-    implementation(libs.androidx.navigation.compose.jvmstubs)
+//    implementation(libs.androidx.navigation.runtime.android)
+//    implementation(libs.androidx.navigation.compose.jvmstubs)
 
 //    implementation(libs.androidx.navigation.compose)
     implementation("androidx.navigation:navigation-compose:2.7.6")
