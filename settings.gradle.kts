@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CapArchive"
 include(":app")
+include(":happy-detector")

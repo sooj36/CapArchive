@@ -32,7 +32,7 @@ fun AppNavigation(
             )
         ) { backStackEntry ->
             val folderName = backStackEntry.arguments?.getString("folderName") ?: ""
-            ImageListScreen(
+            VideoListScreen(
                 navController = navController,
                 folderName = folderName,
             )
@@ -50,7 +50,7 @@ fun AppNavigation(
             // 전달된 데이터 읽어오는 객체
         ) { backStackEntry ->
             val folderName = backStackEntry.arguments?.getString("imageId") ?: ""
-            ImageListScreen(
+            VideoListScreen(
                 navController = navController,
                 folderName = folderName,
             )
@@ -67,7 +67,7 @@ fun AppNavigation(
             )
         ) { backStackEntry ->
             val imageId = backStackEntry.arguments?.getString("imageId") ?: ""
-            ImageDetailScreen(
+            VideoDetailScreen(
                 navController = navController,
                 imageId = imageId
             )

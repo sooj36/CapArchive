@@ -21,12 +21,7 @@ fun FolderListScreen(
 ) {
     val folders = remember {
         listOf(
-            "스크린샷",
-            "캡처 이미지",
-            "문서",
-            "영수증",
-            "메모",
-            "기타"
+            "비디오",
         )
     }
     
@@ -38,7 +33,7 @@ fun FolderListScreen(
         }
     ) { paddingValues ->
         LazyVerticalGrid(
-            columns = GridCells.Fixed(2),
+            columns = GridCells.Fixed(1),
             modifier = Modifier
                 .fillMaxSize()
                 .padding(paddingValues)
