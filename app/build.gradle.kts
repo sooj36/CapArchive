@@ -54,7 +54,7 @@ android {
 
 dependencies {
 
-    //
+    // happy-detector 모듈 추가
     implementation(project(":happy-detector"))
 
     // Core Android dependencies
@@ -63,7 +63,12 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     
     // Navigation
-    implementation("androidx.navigation:navigation-compose:2.7.6")
+    implementation(libs.androidx.navigation.compose)
+
+    // TensorFlow Lite
+//    implementation (libs.tensorflow.lite)
+//    implementation (libs.tensorflow.lite.gpu)
+//    implementation (libs.tensorflow.lite.support)
     
     // Compose BOM and UI components
     implementation(platform(libs.androidx.compose.bom))
@@ -80,9 +85,17 @@ dependencies {
     implementation("androidx.media3:media3-session:1.2.1")
     
     // Image loading for video thumbnails
-    implementation("io.coil-kt:coil-compose:2.5.0")
-    implementation("io.coil-kt:coil-video:2.5.0")
-    
+    implementation(libs.coil.compose)
+    implementation(libs.coil.video)
+
+    // cameraX
+    implementation (libs.androidx.camera.camera2)
+    implementation (libs.androidx.camera.lifecycle)
+    implementation (libs.androidx.camera.view)
+
+    implementation (libs.kotlinx.coroutines.android)
+    implementation (libs.androidx.lifecycle.viewmodel.compose)
+
     // Test dependencies
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
